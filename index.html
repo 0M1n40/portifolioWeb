@@ -8,6 +8,7 @@
     <meta name="author" content="Mina Monteiro">
     <meta name="keywords" content="HTML, CSS, JavaScript">
     <link rel="icon" type="image/svg" href="./assets/img/favicon.svg" />
+    <link rel="stylesheet" href="./assets/css/style.css">
     <title>Meu Portifólio</title>
 </head>
 
@@ -15,12 +16,10 @@
 
     <header>
 
-        <div id="header_content">
+        <div id="header_content" class="flex">
 
         </div>
-        <div id="titulo">
-            <h1>Mina Monteiro</h1>
-        </div>
+       
 
         <div id="menu">
             <nav>
@@ -36,11 +35,18 @@
         </div>
     </header>
 
-    <main>
-        <section id="sobre">
+    <main> 
+        <div id="titulo">
+            <h1>Mina Monteiro</h1>
+            <h4> &lt;tecnologia crativa/&gt </Tecnologia></h4>
+            
+
+            <img src="./assets/img/mina3.png" width="55%" alt="Foto de Mina Yura" />
+
+        </div>
+        <section id="sobre" class="flex_start">
             <h2>Sobre Mim</h2>
-            <div id="conteudo">
-                <img src="https://avatars.githubusercontent.com/u/90533183?v=4" width="25%" alt="Foto de Mina Yura" />
+            <div id="conteudo" class="flex">
 
                 <article id="texto_sobremim">
 
@@ -64,11 +70,12 @@
 
             </div>
         </section>
-        <section id="video">
+
+        <section id="video" class="flex_start">
 <h2>Meu Video</h2>
-<div id="youtube">
+<div id="youtube" class="flex">
     <iframe
-    width=" 560"
+    width=" 660"
     height="315"
     src="https://www.youtube.com/embed/Z3_mtwMMuGI?si=F1QiiDYSfsPG3nF0"
     frameborder = "0"
@@ -80,7 +87,7 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="flex">
 <section id ="redes_sociais">
     <a href="">
         <img src="assets/img/linkedin.svg" alt="LinkedIn" />
