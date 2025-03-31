@@ -1,9 +1,11 @@
 @font-face {
     font-family: 'MinhaFonte';
-    src: url('../fonts/Silkscreen/Silkscreen-Regular.ttf') format('truetype'); /* Para .ttf */
+    src: url('../fonts/Silkscreen/Silkscreen-Regular.ttf') format('truetype');
+    /* Para .ttf */
     font-weight: normal;
     font-style: normal;
 }
+
 
 * {
     margin: 0;
@@ -24,11 +26,13 @@ body {
     background-color: var(--background-color);
     color: var(--secondary-color);
     line-height: 1.6;
-    
+
+
 }
 
 header {
     display: flex;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
     padding: 20px 50px;
@@ -52,14 +56,14 @@ header {
     color: var(--text-color);
 }
 
-main{
+main {
     max-width: 1200px;
     margin: auto;
-    padding: 50px ;
+    padding: 50px;
     text-align: center;
-    background-color:#0f223e;
-    box-shadow: 123 0px 0px 123 rgba(0, 0, 0, 0.30);
-  
+    background-color: #0f223e;
+    box-shadow: 0px 0px 124px rgba(0, 0, 0, 0.1);
+
 }
 
 
@@ -69,25 +73,25 @@ main{
     margin-left: 225px;
     font-size: 5.1rem;
     color: var(--primary-color);
-    
-    
+
+
 }
 
 #titulo h4 {
-    font-family: "MinhaFonte"  ;
+    font-family: "MinhaFonte";
     margin-left: 13rem;
     margin-top: -20px;
     font-size: 2rem;
     color: var(--secondary-color);
-   
+
 }
 
 
 #sobre {
-    background: rgba( 255, 255, 255, 0.1 );
+    background: rgba(255, 255, 255, 0.1);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.30);
-    backdrop-filter: blur( 12.5px );
-   -webkit-backdrop-filter: blur( 12.5px );
+    backdrop-filter: blur(12.5px);
+    -webkit-backdrop-filter: blur(12.5px);
     border-radius: 10px;
     margin-top: 50px;
     text-align: left;
@@ -97,8 +101,8 @@ main{
 #sobre h2 {
     color: var(--primary-color);
     margin-bottom: 1rem;
-    margin-top:1rem;
- 
+    margin-top: 1rem;
+
 }
 
 #conteudo {
@@ -108,7 +112,7 @@ main{
     gap: 50px;
     color: var(--text-color);
     font-size: 1.2rem;
-    
+
 }
 
 
@@ -118,32 +122,28 @@ main{
     margin-left: -34rem;
     margin-bottom: -5.6rem;
     margin-top: -22rem;
-    
-   /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.50);*/
+
+    /* box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.50);*/
 }
 
-#titulo{
+#titulo {
     margin-top: 10rem;
-    margin-left: 3rem; 
- 
+    margin-left: 3rem;
+
 }
 
 #video h2 {
     color: var(--primary-color);
     margin-bottom: 1rem;
-    margin-top:2rem;
-    margin-left:2rem;
+    margin-top: 2rem;
     text-align: center;
-    background-color: red;
+
 }
 
-#youtube{
-    background-color: green;
-}
 
 iframe {
     border-radius: 10px;
-    background-color: blue;
+
 }
 
 footer {
@@ -164,4 +164,105 @@ footer {
 
 #redes_sociais img:hover {
     transform: scale(1.2);
+}
+
+
+
+
+
+
+
+
+
+
+#contact {
+    flex-direction: row;
+    gap: 2rem;
+
+}
+
+
+form {
+    background: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    backdrop-filter: blur(11.5px);
+    -webkit-backdrop-filter: blur(11.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 600px;
+    margin: 2rem 0;
+    margin-left: 19rem;
+    padding: 1.5rem;
+    border: none;
+    
+}
+
+
+form label {
+    margin-top: 1rem;
+    font-size: 1rem;
+    text-align: left;
+    font-weight: 500;
+}
+
+form input,
+textarea {
+    margin: 0.5rem 0 1rem;
+    padding: 0.5rem;
+    border-radius: 1.25rem;
+    border: none;
+    width: 100%;
+    font-size: 1rem;
+
+}
+
+textarea {
+
+    resize: none;
+    height: 5rem;
+
+}
+
+form span {
+    margin: 0 0 0.5rem 0.75rem;
+    font-size: 0.75rem;
+    line-height: 1rem;
+    color: red;
+}
+
+form button {
+
+    width: 10rem;
+    text-align: center;
+    padding: 0.75rem 2rem;
+    background: var(--purple-800);
+    border: 1px solid var(--purple-500);
+    color: var(--white);
+    border-radius: 0.75rem;
+    margin-top: 1rem;
+    margin-left: 140px;
+    font-weight: 700;
+    font-size: 1rem;
+    background-color: var(--primary-color);
+}
+
+form button:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+#header_content {
+margin-left: 94%;
+  
+}
+
+#titulo_contato {
+
+    max-width: 100%;
+    margin-left: 25px;
+    font-size: 2.1rem;
+    color: var(--primary-color)
 }
